@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    background-image: repeating-linear-gradient(90deg,rgb(39, 39, 235),rgb(214, 24, 214),rgb(38, 38, 148));
+}
