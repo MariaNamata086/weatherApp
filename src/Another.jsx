@@ -13,8 +13,8 @@ import { BsFillBrightnessHighFill,
 import {ImSpinner6} from "react-icons/im";
 import {WiBarometer} from "react-icons/wi";
 import {AiOutlineSearch} from "react-icons/ai";
-import { Result } from 'postcss';
-import{TbTemperatureCelsius,} from 'react-icons/Tb'
+
+// import{TbTemperatureCelsius,} from 'react-icons/Tb'
 import moment from 'moment/moment';
 
 function Component2(){
@@ -38,15 +38,7 @@ function Component2(){
         setValue('');
         setAnimate(false);
      }
-    // else{
-        
-    //     ()=>{
-    //         setTimeout(()=>{
-    //             setAnimate(true);
-    //         },100)
-    //       }
-          
-    // }
+    
   }
     useEffect(
         ()=>{
@@ -65,16 +57,7 @@ function Component2(){
             })()  
         },[location]
     )
-    // useEffect(
-    //     ()=>{
-    //         const timer = setTimeout(()=>{
-    //             setErrorMsg('')
-    //         },2000);
-    //         return ()=>{clearTimeout(timer)};
-
-    //     },[errorMsg]
-    // )
-    
+   
 
     const object = {
         'Haze': <BsCloudHaze2Fill />,
@@ -115,8 +98,8 @@ function Component2(){
             <div className='text-[100px] leading-none'>
               {parseInt(data.main.temp)}
             </div>
-            <div className='text-4xl'><TbTemperatureCelsius/>
-            </div>
+            {/* <div className='text-4xl'><TbTemperatureCelsius/> */}
+            {/* </div> */}
           </div>
           <div className='capitalize text-center space-y-5 '>
             {data.weather[0].description}
